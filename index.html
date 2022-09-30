@@ -33,10 +33,12 @@
                     <label for="exampleEmail1" class="field-label"> :شماره همراه (اختیاری) </label>
                     <input id="exampleEmail1" type="text" placeholder="09332333643" class="input">
                 </div>
-                <div class="field">
-                    <label for="examplePassword1" class="field-label">رمز عبور</label>
-                    <input id="examplePassword1" type="password" placeholder="......." class="input">
+                <div class="field " style="margin-bottom:-9px ;">
+                    <label for="examplePassword1 " class="field-label ">رمز عبور</label>
+                    <input id="id_password " name="pass " type="password " placeholder="....... " class="input examplePassword1 " name="pass ">
+                    <i class="far fa-eye " id="togglePassword "></i>
                 </div>
+
                 <div class="field">
                     <label for="examplePassword1" class="field-label"> تایید رمز عبور</label>
                     <input id="examplePassword1" type="password" placeholder="......." class="input">
@@ -63,7 +65,16 @@
 
     </div>
     </div>
-
+    <script>
+        var togglePassword = document.getElementById("togglePassword ");
+        var password = document.getElementById("id_password ");
+        password.type = "password";
+        togglePassword.addEventListener('click', function(e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
 </body>
 
 </html>

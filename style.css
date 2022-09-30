@@ -112,6 +112,20 @@ body {
     backdrop-filter: blur(5px);
 }
 
+.far {
+    cursor: pointer;
+    position: relative;
+    top: -31px;
+    right: -219px;
+    opacity: 40%;
+    margin-left: -20px;
+}
+
+.fa-user-pen,
+.fa-trash {
+    color: #898e9a;
+}
+
 
 /* ----------------------------------------------------------------------------------nomorfism
 
