@@ -1392,12 +1392,12 @@ img {
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    background-color: #e0eaf9;
-    color: #383555;
+    background-color: #2196f3;
+    color: #e3f2fd;
 }
 
 .button:hover {
-    background-color: #e9f0fb;
+    background-color: #2196f3;
 }
 
 .button:not(:last-child) {
@@ -1410,14 +1410,11 @@ img {
     z-index: 99;
 }
 
-.button:hover {
-    color: #2451f2;
-}
-
 .button:focus,
 .button:active,
 .button.is-active {
-    color: #2451f2;
+    color: #e9f0fb;
+    background-color: #1976d2;
     -webkit-box-shadow: 4px 4px 8px rgba(56, 53, 85, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px rgba(224, 234, 249, 0.5), 0 0 0 3px rgba(36, 81, 242, 0.25);
     box-shadow: 4px 4px 8px rgba(56, 53, 85, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px rgba(224, 234, 249, 0.5), 0 0 0 3px rgba(36, 81, 242, 0.25);
 }
