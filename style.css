@@ -49,13 +49,32 @@ body {
     align-items: center;
     position: relative;
     margin-top: 20px;
-    width: 100%;
+    width: 300px;
     height: auto;
     margin: auto;
     z-index: 999;
 }
 
-@media only screen and (max-width:1115px) {
+@media only screen and (max-width:415px) {
+    .box {
+        width: 100% !important;
+    }
+    .circle-01 {
+        position: absolute;
+        top: -32px !important;
+        left: 0px !important;
+        width: 90px !important;
+        z-index: 999;
+        height: 90px !important;
+    }
+    .circle-02 {
+        position: absolute;
+        right: 1px !important;
+    }
+}
+
+
+/* @media only screen and (max-width:1115px) {
     .box {
         max-width: 30% !important;
     }
@@ -113,7 +132,7 @@ body {
         position: absolute;
         right: 1px !important;
     }
-}
+} */
 
 .circle-01 {
     position: absolute;
