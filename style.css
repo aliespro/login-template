@@ -48,15 +48,16 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 20px;
     width: 100%;
     height: auto;
     margin: auto;
     z-index: 999;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:768px) {
     .box {
-        max-width: 60%;
+        background: #710f0f !important;
     }
 }
 
@@ -103,11 +104,11 @@ body {
 
 .far {
     cursor: pointer;
-    position: relative;
-    top: -31px;
-    right: -219px;
+    position: absolute;
     opacity: 40%;
-    margin-left: -20px;
+    margin-left: -30px;
+    margin-top: 13px;
+    /* top: 20px; */
 }
 
 .fa-user-pen,
