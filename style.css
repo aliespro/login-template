@@ -2608,14 +2608,13 @@ input:-webkit-autofill {
 
 .table {
     overflow: hidden;
-    width: 100%;
+    width: 9x0%;
     border-spacing: 0;
     border-collapse: separate;
     border-radius: 16px;
-    overflow: hidden;
     color: #383555;
-    -webkit-box-shadow: 4px 4px 8px rgba(56, 53, 85, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px rgba(224, 234, 249, 0.5);
-    box-shadow: 4px 4px 8px rgba(56, 53, 85, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px rgba(224, 234, 249, 0.5);
+    /* -webkit-box-shadow: 4px 4px 8px rgba(56, 53, 85, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px rgba(224, 234, 249, 0.5); */
+    /* box-shadow: 4px 4px 8px rgba(56, 53, 85, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px rgba(224, 234, 249, 0.5); */
 }
 
 .table:not(:last-child) {
@@ -2629,7 +2628,7 @@ input:-webkit-autofill {
 .table thead th {
     border-right: 2px solid rgba(255, 255, 255, 0.3);
     border-top: 0;
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -2646,67 +2645,69 @@ input:-webkit-autofill {
 .table td,
 .table th {
     padding: 1.2em 0.6em;
-    text-align: center;
+    text-align: center !important;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     background-color: #e0eaf9;
     border-right: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.table.is-xs {
-    font-size: 0.75rem;
+@media screen and (max-width: 600px) {
+    table thead {
+        border-right: 332px solid #222;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        width: 400px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .table td {
+        text-align: left !important;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: left !important;
+    }
+    table td span,
+    table i {
+        width: 10%;
+        text-align: center;
+        margin-left: 30px;
+    }
+    table td::before {
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        content: attr(data-label);
+        float: right;
+        position: relative;
+        right: -9px;
+        top: -13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 13px 18px;
+    }
 }
 
-.table.is-sm {
-    font-size: 0.875rem;
+table td:last-child {
+    border-bottom: 0;
 }
 
-.table,
-.table.is-md {
-    font-size: 1rem;
-}
-
-.table.is-lg {
-    font-size: 1.125rem;
-}
-
-.table.is-xl {
-    font-size: 1.25rem;
-}
-
-.table.is-center {
-    text-align: center;
-}
-
-.table.is-top tbody {
-    vertical-align: top;
-}
-
-.table.is-bottom tbody {
-    vertical-align: bottom;
-}
-
-.table.is-middle tbody {
-    vertical-align: middle;
-}
-
-.table.is-header-centerd th {
-    text-align: center;
-}
-
-.table.is-header-highlighted th {
+table td {
+    padding: 1.2em 0.6em;
+    text-align: left !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     background-color: #e0eaf9;
-}
-
-.table tr.is-dark,
-.table tr.is-dark:hover {
-    background-color: #383555;
-    color: #fff;
-}
-
-.table tr.is-light,
-.table tr.is-light:hover {
-    background-color: #e0eaf9;
-    color: #383555;
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .progress {
