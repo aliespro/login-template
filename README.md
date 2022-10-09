@@ -1,10 +1,12 @@
+in the name of God
+
 i am amirali eshaghi and it is my first project in github
 
 this project is about page sign up and table eamil and other property.
 
 
 this is cleen value
-![image](http://full/path/to/img.jpg](https://user-images.githubusercontent.com/114607506/194754825-4ac5444b-1ca5-4f55-a1ac-b5e77789ec11.png)
+![image](https://user-images.githubusercontent.com/114607506/194755499-9a1f6466-fe97-401f-b55b-b3f1a79ffc74.png)
 
 and thit is complte value
 ![image](https://user-images.githubusercontent.com/114607506/194755053-8d436014-6045-4289-b78c-13f8c37f5e77.png)
