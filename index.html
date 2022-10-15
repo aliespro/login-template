@@ -6,7 +6,7 @@
     <title>ثبت نام</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="css/all.min.css">
-
+    <link rel="stylesheet" href="normalize.css">
 
 </head>
 
@@ -16,43 +16,46 @@
 
 
     <div class="box">
-        <div class="form-box">
+        <form action="">
+            <div class="form-box">
 
-            <div class="field">
-                <label for="exampleEmail1" class="field-label"> :نام کاربری </label>
-                <input id="exampleEmail1" type="text" placeholder="@aliprogram" class="input">
+                <div class="field">
+                    <label for="username" class="field-label"> :نام کاربری </label>
+                    <input id="username" type="text" placeholder="aliprogram" class="input">
+                </div>
+
+                <div class="field">
+                    <label for="email" class="field-label"> :ایمیل </label>
+                    <input id="email" type="text" placeholder="info@gmail.com " class="input">
+                </div>
+                <div class="field">
+                    <label for="phone" class="field-label"> :شماره همراه (اختیاری) </label>
+                    <input id="phone" type="text" placeholder="09332333643" class="input">
+                </div>
+                <div class="field ">
+                    <label for="password " class="field-label ">رمز عبور</label>
+                    <input id="password " name="pass " type="password " class="input">
+                    <i class="far fa-eye " id="togglePassword "></i>
+                </div>
+
+                <div class="field">
+                    <label for="confirm-password" class="field-label"> تایید رمز عبور</label>
+                    <input id="confirm-password" type="password" class="input">
+                </div>
+                <div class="field">
+                    <label class="checkbox">
+                            <span class="checkbox-label">تمامی قوانین را می پذیریم  </span>
+                            <input type="checkbox" class="checkbox-input">
+                          </label>
+                </div>
+
+                <button type="submit" class="button">ثبت نام</button>
+
+
+
             </div>
+        </form>
 
-            <div class="field">
-                <label for="exampleEmail1" class="field-label"> :ایمیل </label>
-                <input id="exampleEmail1" type="text" placeholder="info@gmail.com " class="input">
-            </div>
-            <div class="field">
-                <label for="exampleEmail1" class="field-label"> :شماره همراه (اختیاری) </label>
-                <input id="exampleEmail1" type="text" placeholder="09332333643" class="input">
-            </div>
-            <div class="field ">
-                <label for="examplePassword1 " class="field-label ">رمز عبور</label>
-                <input id="id_password " name="pass " type="password " placeholder="....... " class="input examplePassword1 " name="pass ">
-                <i class="far fa-eye " id="togglePassword "></i>
-            </div>
-
-            <div class="field">
-                <label for="examplePassword1" class="field-label"> تایید رمز عبور</label>
-                <input id="examplePassword1" type="password" placeholder="......." class="input">
-            </div>
-            <div class="field">
-                <label class="checkbox">
-                        <span class="checkbox-label" style="margin-right:5px ;"data-ripple-light="true">تمامی قواننین را می پذیریم  </span>
-                        <input type="checkbox" class="checkbox-input">
-                      </label>
-            </div>
-
-            <button class="button">ثبت نام</button>
-
-
-
-        </div>
 
         <a class="circle-01" href="./list.html">
             <i class="fad fa-users"></i>
@@ -63,7 +66,7 @@
     </div>
     <script>
         var togglePassword = document.getElementById("togglePassword ");
-        var password = document.getElementById("id_password ");
+        var password = document.getElementById("password ");
         password.type = "password";
         togglePassword.addEventListener('click', function(e) {
             const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
